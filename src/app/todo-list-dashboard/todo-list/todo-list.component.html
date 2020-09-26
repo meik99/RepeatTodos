@@ -1,0 +1,19 @@
+<ul class="list-group">
+  <app-todo
+    *ngFor="let todo of todos"
+    [todo]="todo"
+    (deleteTodo)="deleteTodo($event)"
+    (todoChange)="todoChange()"></app-todo>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-10">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Do the dishes" [(ngModel)]="newTodo.name" (keydown)="keydownAddName($event)">
+        </div>
+      </div>
+      <div class="col-2">
+        <button type="button" class="btn btn-primary" (click)="addNewTodo()">Add</button>
+      </div>
+    </div>
+  </li>
+</ul>

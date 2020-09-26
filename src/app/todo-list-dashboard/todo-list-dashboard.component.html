@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row mt-2">
+    <div class="col-12">
+      <app-todo-list-actions
+        [todoListName]="todoListTitle"
+        (todoListNameChange)="todoListTitleChange($event)"
+        (saveAsPreset)="saveAsPreset()">
+      </app-todo-list-actions>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-12">
+      <app-todo-list [todos]="todos" (todosChange)="todosChange($event)"></app-todo-list>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-12">
+      <app-todo-list-presets [presetsChange]="presetChange" (loadPresetEvent)="reloadTodo()" ></app-todo-list-presets>
+    </div>
+  </div>
+</div>

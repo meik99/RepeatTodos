@@ -1,0 +1,35 @@
+
+.checkbox-example {
+  appearance: none;
+  width: 2em;
+  height: 2em;
+  margin: 0.1em;
+}
+
+.checkbox-example:checked {
+  box-shadow: none;
+  background: url("/assets/iconmonstr-check-mark-thin.svg") no-repeat center;
+  border-color: black;
+}
+
+.checkbox-example:active {
+  box-shadow: none;
+}
+
+.checkbox-example:focus {
+  box-shadow: none;
+  border-color: black;
+}
+
+.col-1 {
+  margin-right: 0;
+  padding-right: 0;
+}
+.col-11 {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.bg-gray {
+  background-color: lightgray;
+}
